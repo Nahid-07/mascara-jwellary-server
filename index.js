@@ -22,11 +22,20 @@ const client = new MongoClient(uri, {
 async function run(){
     try{
         const displayProduct = client.db("mascara-jwellary").collection("displayProduct");
+        const users = client.db("mascara-jwellary").collection("users");
 
         app.get('/displayProduct', async(req,res)=>{
             const query = {};
             const data = await displayProduct.find(query).toArray()
             res.send(data)
+        });
+        
+        // user post routes
+
+        app.post('/users', async(req, res)=>{
+          const usersData = req.body;
+          const result = await users.insertOne(usersData);
+          res.send(result)
         })
     }
     finally{
