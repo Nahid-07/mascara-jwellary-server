@@ -23,6 +23,7 @@ async function run(){
     try{
         const displayProduct = client.db("mascara-jwellary").collection("displayProduct");
         const users = client.db("mascara-jwellary").collection("users");
+        const products = client.db("mascara-jwellary").collection("products");
 
         app.get('/displayProduct', async(req,res)=>{
             const query = {};
@@ -50,6 +51,13 @@ async function run(){
           const query = {};
           const allUsers = await users.find(query).toArray();
           res.send(allUsers)
+        });
+
+        // add product api
+        app.post('/add-product', async(req, res)=>{
+          const productData = req.body;
+          const result = await products.insertOne(productData);
+          res.send(result)
         })
     }
     finally{
