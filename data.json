@@ -1,0 +1,51 @@
+[
+    {
+        "image": "https://api.swarajshop.com/api/media/image-resize?path=Top/COPPER/A%20Kundan/&name=SH0000000007968_1641016375711.jpeg&width=1000&height=1000",
+        "productName" : "bridal kundal jewelry",
+        "price" : 350,
+        "collection" : "bridal"
+    },
+    {
+        "image" : "https://api.swarajshop.com/api/media/image-resize?path=OLD/MAZAK/&name=SH0000000007649_1640599913688.jpeg&width=390&height=390",
+        "productName" : "South Indial bridal jewelry",
+        "price" : 300,
+        "collection" : "bridal"
+    },
+    {
+        "image" : "https://m.media-amazon.com/images/I/81ek2stp8XL._UY500_.jpg",
+        "productName" : "Gold plate 24k jelebi jewelry",
+        "price" : 400,
+        "collection" : "bridal"
+    },
+    {
+        "image": "https://api.swarajshop.com/api/media/image-resize?path=Top/COPPER/A%20Kundan/&name=SH0000000007968_1641016375711.jpeg&width=1000&height=1000",
+        "productName" : "bridal kundal jewelry",
+        "price" : 350,
+        "collection" : "bridal"
+    },
+    {
+        "image" : "https://api.swarajshop.com/api/media/image-resize?path=OLD/MAZAK/&name=SH0000000007649_1640599913688.jpeg&width=390&height=390",
+        "productName" : "South Indial bridal jewelry",
+        "price" : 300
+    },
+    {
+        "image" : "https://m.media-amazon.com/images/I/81ek2stp8XL._UY500_.jpg",
+        "productName" : "Gold plate 24k jelebi jewelry",
+        "price" : 400
+    },
+    {
+        "image": "https://api.swarajshop.com/api/media/image-resize?path=Top/COPPER/A%20Kundan/&name=SH0000000007968_1641016375711.jpeg&width=1000&height=1000",
+        "productName" : "bridal kundal jewelry",
+        "price" : 350
+    },
+    {
+        "image" : "https://api.swarajshop.com/api/media/image-resize?path=OLD/MAZAK/&name=SH0000000007649_1640599913688.jpeg&width=390&height=390",
+        "productName" : "South Indial bridal jewelry",
+        "price" : 300
+    },
+    {
+        "image" : "https://m.media-amazon.com/images/I/81ek2stp8XL._UY500_.jpg",
+        "productName" : "Gold plate 24k jelebi jewelry",
+        "price" : 400
+    }
+]

@@ -36,6 +36,20 @@ async function run(){
           const usersData = req.body;
           const result = await users.insertOne(usersData);
           res.send(result)
+        });
+
+        // get user by email
+        app.get('/users/:email', async(req,res)=>{
+          const email = req.params.email;
+          const query = {email : email};
+          const user = await users.findOne(query);
+          res.send(user)
+        });
+        // get all users
+        app.get('/allusers', async(req,res)=>{
+          const query = {};
+          const allUsers = await users.find(query).toArray();
+          res.send(allUsers)
         })
     }
     finally{
