@@ -58,6 +58,13 @@ async function run(){
           const productData = req.body;
           const result = await products.insertOne(productData);
           res.send(result)
+        });
+        // get all the products api
+
+        app.get('/allproducts', async(req,res)=>{
+          const query = {};
+          const product = await products.find(query).toArray();
+          res.send(product)
         })
     }
     finally{
