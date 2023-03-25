@@ -61,11 +61,19 @@ async function run(){
         });
         // get all the products api
 
-        app.get('/allproducts', async(req,res)=>{
-          const query = {};
+        app.get('/allproducts/:category', async(req,res)=>{
+          const category = req.params.category;
+          const query = {category : category};
           const product = await products.find(query).toArray();
           res.send(product)
+        });
+        app.get('/allproducts', async(req,res)=>{
+          const query = {};
+          const result = await products.find(query).toArray()
+          res.send(result)
         })
+
+        app.get('')
     }
     finally{
 
